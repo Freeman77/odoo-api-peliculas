@@ -1,0 +1,43 @@
+services:
+    odoo:
+        container_name: odoo
+        image: odoo:16.0
+        build:
+            context: .
+            dockerfile: odoo.Dockerfile
+        restart: always
+        volumes:
+            - ./addons/OCA/connector:/mnt/extra-addons/connector
+            - ./addons/OCA/rest-framework:/mnt/extra-addons/rest-framework
+            - ./addons/custom:/mnt/extra-addons/custom
+            - ./odoo.conf:/etc/odoo/odoo.conf
+            - odoo-web-data:/var/lib/odoo
+        ports:
+            - "8069:8069"
+            - "8072:8072"
+            #- "5678:5678"
+        depends_on:
+            - "db"
+        #command: ["python3", "-m", "debugpy", "--listen", "0.0.0.0:5678", "/opt/odoo/odoo-bin", "--dev=true"]
+    db:
+      image: postgres:15
+      restart: always
+      container_name: postgresql
+      environment:
+        - POSTGRES_PASSWORD=odoo
+        - POSTGRES_USER=odoo
+        - POSTGRES_DB=postgres
+        - PGDATA=/var/lib/postgresql/data/pgdata
+      ports:
+        - "127.0.0.1:9432:5432"
+      volumes:
+        - odoo-db-data:/var/lib/postgresql/data/pgdata
+      logging:
+        driver: json-file
+        options:
+          max-size: "30m"
+          max-file: "10"
+
+volumes:
+  odoo-web-data:
+  odoo-db-data:
