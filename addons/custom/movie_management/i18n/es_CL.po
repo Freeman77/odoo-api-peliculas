@@ -1,0 +1,82 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* movie_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250131\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-10 03:17+0000\n"
+"PO-Revision-Date: 2025-02-10 03:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__id
+msgid "ID"
+msgstr ""
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: movie_management
+#: model:ir.model,name:movie_management.model_movie_movie
+msgid "Movie"
+msgstr "Película"
+
+#. module: movie_management
+#: model:ir.ui.menu,name:movie_management.menu_movie_root
+msgid "Movie Management"
+msgstr "Gestión de Películas"
+
+#. module: movie_management
+#: model:ir.actions.act_window,name:movie_management.action_movies
+#: model:ir.ui.menu,name:movie_management.menu_movies
+msgid "Movies"
+msgstr "Películas"
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__ranking
+msgid "Ranking"
+msgstr ""
+
+#. module: movie_management
+#: model_terms:ir.actions.act_window,help:movie_management.action_movies
+msgid "There are no movies to show."
+msgstr "No hay películas que mostrar."
+
+#. module: movie_management
+#: model:ir.model.fields,field_description:movie_management.field_movie_movie__name
+msgid "Title"
+msgstr "Título"
