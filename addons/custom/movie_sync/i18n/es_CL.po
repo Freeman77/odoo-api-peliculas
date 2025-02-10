@@ -1,0 +1,27 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* movie_sync
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250131\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-10 05:22+0000\n"
+"PO-Revision-Date: 2025-02-10 05:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: movie_sync
+#: model:ir.model,name:movie_sync.model_movie_movie
+msgid "Movie"
+msgstr "Película"
+
+#. module: movie_sync
+#: model:ir.actions.server,name:movie_sync.movie_sync_cron_ir_actions_server
+#: model:ir.cron,cron_name:movie_sync.movie_sync_cron
+msgid "Retrieve Movies from Random-Data-API"
+msgstr "Obtener Películas desde Random-Data-API"

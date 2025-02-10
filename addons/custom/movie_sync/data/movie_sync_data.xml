@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- API config parameters -->
+        <record model='ir.config_parameter' id='api_url'>
+            <field name='key'>movie_sync.api_url</field>
+            <field name='value'>https://random-data-api.com/api/v3/projects/a2bebcc5-69e3-4b4e-b8c0-4a2f4306f0da</field>
+        </record>
+        <record model='ir.config_parameter' id='api_key'>
+            <field name='key'>movie_sync.api_key</field>
+            <field name='value'>YOUR_API_KEY_HERE</field>
+        </record>
+        
+        <!-- Cron -->
+        <record id="movie_sync_cron" model="ir.cron">
+            <field name="name">Retrieve Movies from Random-Data-API</field>
+            <field name="model_id" ref="model_movie_movie"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_sync_movies_from_rda()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="active" eval="False"/>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+</odoo>

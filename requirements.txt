@@ -3,4 +3,5 @@ pyquerystring
 parse-accept-language
 apispec
 cachetools
+requests
 #debugpy
