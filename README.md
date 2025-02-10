@@ -8,7 +8,7 @@ Módulos de Gestión de Películas en Odoo (16.0)
 
 - movie_sync: Obtiene información de películas desde el servicio externo [Random Data API - Películas](https://random-data-api.com/api/v3/projects/a2bebcc5-69e3-4b4e-b8c0-4a2f4306f0da), cada 1 minuto (requiere API key).
 
-- movie_api: Expone un endpoint REST (/api/top-movies) que entrega un Top 10 de películas, basado en el módulo [Base Rest](https://github.com/OCA/rest-framework/tree/16.0/base_rest) de la OCA.
+- movie_api: Expone un endpoint REST (/api/top_movies) que entrega un Top 10 de películas, basado en el módulo [Base Rest](https://github.com/OCA/rest-framework/tree/16.0/base_rest) de la OCA.
 
 ## Para iniciar el proyecto en modo producción
 
